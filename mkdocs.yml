@@ -1,0 +1,86 @@
+site_name: SRE Handbook
+site_description: A practical learning and interview-preparation handbook for senior SRE and platform engineering.
+site_url: https://YOUR-USERNAME.github.io/sre-handbook/
+repo_name: YOUR-USERNAME/sre-handbook
+repo_url: https://github.com/YOUR-USERNAME/sre-handbook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  font: false
+  features:
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/compact-readability.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Start here:
+      - About: about.md
+      - Learning roadmap: learning-roadmap.md
+  - Fundamentals:
+      - Overview: fundamentals/index.md
+      - SRE principles: fundamentals/sre-principles.md
+      - SLIs, SLOs and SLAs: fundamentals/sli-slo-sla.md
+      - Error budgets and alerts: fundamentals/error-budgets.md
+      - Incident management: fundamentals/incident-management.md
+  - Foundations:
+      - Linux troubleshooting: linux/index.md
+      - Networking: networking/index.md
+      - Python automation: python/index.md
+      - Containers: containers/index.md
+  - Cloud and Kubernetes:
+      - AWS foundations: aws/index.md
+      - Kubernetes operations: kubernetes/index.md
+      - EKS operations: eks/index.md
+      - Security: security/index.md
+  - Delivery and IaC:
+      - Terraform: terraform/index.md
+      - CI/CD: cicd/index.md
+      - GitOps: gitops/index.md
+  - Observability: observability/index.md
+  - Architecture:
+      - System design: system-design/index.md
+      - Platform engineering: platform-engineering/index.md
+      - AI for SRE: ai-for-sre/index.md
+  - Hands-on labs: hands-on-labs/index.md
+  - Interview preparation:
+      - Overview: interview-prep/index.md
+      - Linux: interview-prep/linux.md
+      - AWS and EKS: interview-prep/aws.md
+      - Kubernetes: interview-prep/kubernetes.md
+      - Observability: interview-prep/observability.md
+      - Scenarios: interview-prep/scenario-based.md
+      - Leadership: interview-prep/behavioral-and-leadership.md
+  - Reference:
+      - Glossary: glossary.md
+      - References: references.md
+
+copyright: "Content is educational and sanitized; verify production decisions against current vendor documentation."

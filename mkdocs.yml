@@ -52,7 +52,10 @@ nav:
       - Error budgets and alerts: fundamentals/error-budgets.md
       - Incident management: fundamentals/incident-management.md
   - Foundations:
-      - Linux troubleshooting: linux/index.md
+      - Linux troubleshooting:
+          - Overview: linux/index.md
+          - Performance Monitoring:
+              - Command Guide (top, ps, free, vmstat, iostat): linux/system-monitoring.md
       - Networking: networking/index.md
       - Python automation: python/index.md
       - Containers: containers/index.md

@@ -38,11 +38,11 @@ This tracker records lesson understanding, assessment attempts and GitHub soluti
 
 | Exercise | Artifact status | Evidence | Learner evidence / mastery |
 | --- | --- | --- | --- |
-| AI incident assistant design | Solution committed | `docs/ai-for-sre/labs/incident-assistant-design.md` includes architecture, inputs, output contract, investigation flow, safety and acceptance criteria | Reference solution is available; no independent learner submission recorded |
-| Single-neuron Python implementation | Solution committed; 7 tests pass locally | `labs/ai-for-sre/single-neuron/neuron.py`, `test_neuron.py`, and README include implementation, tests and run instructions | Arithmetic discussed; learner execution/independent modification not yet reported |
-| Transformer architecture flow | Solution committed | `docs/ai-for-sre/labs/transformer-flow.md` includes Mermaid flow and explanation | Reference solution is available; independent learner explanation not assessed |
+| AI incident assistant design | Artifact complete — merged to `main` | `docs/ai-for-sre/labs/incident-assistant-design.md` includes architecture, inputs, output contract, investigation flow, safety and acceptance criteria | Reference solution is available; no independent learner submission recorded |
+| Single-neuron Python implementation | Artifact complete — merged to `main`; 7 tests pass locally and in CI | `labs/ai-for-sre/single-neuron/neuron.py`, `test_neuron.py`, and README include implementation, tests and run instructions | Arithmetic discussed; learner execution/independent modification not yet reported |
+| Transformer architecture flow | Artifact complete — merged to `main` | `docs/ai-for-sre/labs/transformer-flow.md` includes Mermaid flow and explanation | Reference solution is available; independent learner explanation not assessed |
 
-The single-neuron tests were run locally using Python's standard-library `unittest` and all seven passed. GitHub Actions is configured to run these tests together with the strict MkDocs build; the pull request/CI result will be recorded after validation.
+The single-neuron tests were run locally using Python's standard-library `unittest` and all seven passed. GitHub Actions validation on the merged `main` commit also passed `mkdocs build --strict` and all seven unit tests. The GitHub Pages deployment workflow for the merged commit completed successfully.
 
 ## Hands-on artifact completion policy
 

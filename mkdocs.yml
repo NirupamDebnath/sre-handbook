@@ -69,10 +69,10 @@ nav:
       - CI/CD: cicd/index.md
       - GitOps: gitops/index.md
   - Observability: observability/index.md
+  - AI for SRE: ai-for-sre/index.md
   - Architecture:
       - System design: system-design/index.md
       - Platform engineering: platform-engineering/index.md
-      - AI for SRE: ai-for-sre/index.md
   - Hands-on labs: hands-on-labs/index.md
   - Interview preparation:
       - Overview: interview-prep/index.md

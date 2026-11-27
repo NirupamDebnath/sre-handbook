@@ -50,8 +50,9 @@ Record the input character count, approximate word count and actual token count.
 
 ## Implementation
 
-- [Python source and unit tests](../../../labs/ai-for-sre/tokenization/)
-- [Lab README](../../../labs/ai-for-sre/tokenization/README.md)
+- [Python source](https://github.com/NirupamDebnath/sre-handbook/blob/main/labs/ai-for-sre/tokenization/tokenization.py)
+- [Unit tests](https://github.com/NirupamDebnath/sre-handbook/blob/main/labs/ai-for-sre/tokenization/test_tokenization.py)
+- [Lab README](https://github.com/NirupamDebnath/sre-handbook/blob/main/labs/ai-for-sre/tokenization/README.md)
 
 ## Safety note
 

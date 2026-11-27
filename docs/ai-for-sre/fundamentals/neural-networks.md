@@ -12,13 +12,13 @@
 
 A simplified artificial neuron takes inputs, multiplies them by learned weights, adds a bias, then applies an activation function.
 
-[
-z = sum_{i=1}^{n} x_i w_i + b
-]
+$
+z = \sum_{i=1}^{n} x_i w_i + b
+$
 
-[
+$
 a = f(z)
-]
+$
 
 - (x_i): input feature.
 - (w_i): learned weight controlling that feature's contribution.
@@ -41,17 +41,17 @@ Consider three normalized, illustrative input signals:
 
 The weighted sum is:
 
-[
+$
 z=(0.95)(0.50)+(0.85)(0.30)+(0.20)(0.80)-0.20=0.69
-]
+$
 
-If the activation function is ReLU, (f(z)=max(0,z)), the output is 0.69.
+If the activation function is ReLU, $f(z)=\max(0,z)$, the output is 0.69.
 
 If the CPU weight changes from 0.50 to 0.20, keeping all other values fixed:
 
-[
+$
 z=(0.95)(0.20)+0.255+0.160-0.20=0.405
-]
+$
 
 The new result is 0.405. This is a manually specified parameter change for illustration; it is not evidence of learning.
 
@@ -132,7 +132,7 @@ Gradient descent uses gradients to update parameters in a direction intended to 
 w_{	ext{new}} = w_{	ext{old}} - eta rac{partial L}{partial w}
 ]
 
-Here, (eta) is the learning rate and (L) is the loss. Backpropagation computes the gradient; the optimizer uses it to update parameters. They are related but distinct operations.
+Here, $\eta$ is the learning rate and $L$ is the loss. Backpropagation computes the gradient; the optimizer uses it to update parameters. They are related but distinct operations.
 
 A learning rate that is too high can cause unstable updates or overshooting; one that is too low can make optimization slow.
 

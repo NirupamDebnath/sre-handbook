@@ -1,8 +1,8 @@
 site_name: SRE Handbook
 site_description: A practical learning and interview-preparation handbook for senior SRE and platform engineering.
-site_url: https://YOUR-USERNAME.github.io/sre-handbook/
-repo_name: YOUR-USERNAME/sre-handbook
-repo_url: https://github.com/YOUR-USERNAME/sre-handbook
+site_url: https://nirupamdebnath.github.io/sre-handbook/
+repo_name: NirupamDebnath/sre-handbook
+repo_url: https://github.com/NirupamDebnath/sre-handbook
 edit_uri: edit/main/docs/
 
 theme:
@@ -69,7 +69,14 @@ nav:
       - CI/CD: cicd/index.md
       - GitOps: gitops/index.md
   - Observability: observability/index.md
-  - AI for SRE: ai-for-sre/index.md
+  - AI for SRE:
+      - Overview: ai-for-sre/index.md
+      - AI Fundamentals:
+          - Overview: ai-for-sre/fundamentals/index.md
+          - AI, ML and Deep Learning: ai-for-sre/fundamentals/ai-ml-deep-learning.md
+          - Neural Networks: ai-for-sre/fundamentals/neural-networks.md
+          - Transformers and Attention: ai-for-sre/fundamentals/transformers-attention.md
+      - Learning Progress: ai-for-sre/assessments/progress.md
   - Architecture:
       - System design: system-design/index.md
       - Platform engineering: platform-engineering/index.md

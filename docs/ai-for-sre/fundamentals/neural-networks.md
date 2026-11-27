@@ -12,19 +12,19 @@
 
 A simplified artificial neuron takes inputs, multiplies them by learned weights, adds a bias, then applies an activation function.
 
-$
+$$
 z = \sum_{i=1}^{n} x_i w_i + b
-$
+$$
 
-$
+$$
 a = f(z)
-$
+$$
 
-- (x_i): input feature.
-- (w_i): learned weight controlling that feature's contribution.
-- (b): learned bias term.
-- (f): activation function.
-- (a): neuron output.
+- $x_i$: input feature.
+- $w_i$: learned weight controlling that feature's contribution.
+- $b$: learned bias term.
+- $f$: activation function.
+- $a$: neuron output.
 
 Weights are not simply manually chosen output knobs in a trained model. Training adjusts them using examples and an optimization procedure.
 
@@ -41,17 +41,17 @@ Consider three normalized, illustrative input signals:
 
 The weighted sum is:
 
-$
+$$
 z=(0.95)(0.50)+(0.85)(0.30)+(0.20)(0.80)-0.20=0.69
-$
+$$
 
 If the activation function is ReLU, $f(z)=\max(0,z)$, the output is 0.69.
 
 If the CPU weight changes from 0.50 to 0.20, keeping all other values fixed:
 
-$
+$$
 z=(0.95)(0.20)+0.255+0.160-0.20=0.405
-$
+$$
 
 The new result is 0.405. This is a manually specified parameter change for illustration; it is not evidence of learning.
 

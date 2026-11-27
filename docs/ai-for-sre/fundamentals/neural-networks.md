@@ -128,9 +128,9 @@ Backpropagation calculates gradients—how the loss changes with respect to each
 
 Gradient descent uses gradients to update parameters in a direction intended to reduce loss. For one parameter:
 
-[
-w_{	ext{new}} = w_{	ext{old}} - eta rac{partial L}{partial w}
-]
+$$
+w_{\text{new}} = w_{\text{old}} - \eta \frac{\partial L}{\partial w}
+$$
 
 Here, $\eta$ is the learning rate and $L$ is the loss. Backpropagation computes the gradient; the optimizer uses it to update parameters. They are related but distinct operations.
 

@@ -21,8 +21,8 @@ The objective is not to replace engineering judgement with an autonomous root-ca
 1. [AI, machine learning and deep learning](fundamentals/ai-ml-deep-learning.md)
 2. [Neural networks and model training](fundamentals/neural-networks.md)
 3. [Transformers and attention](fundamentals/transformers-attention.md)
-4. Tokens and tokenization — planned
-5. Embeddings — planned
+4. [Tokens and tokenization](fundamentals/tokens-and-tokenization.md)
+5. Embeddings — next lesson
 
 [Open the Lesson 1–3 knowledge-check answer keys](assessments/answer-keys.md).
 
@@ -31,6 +31,7 @@ The objective is not to replace engineering judgement with an autonomous root-ca
 - [AI incident assistant design](labs/incident-assistant-design.md) — reference architecture, evidence inputs, output contract, safety boundaries and acceptance criteria.
 - [Single-neuron Python lab](labs/single-neuron.md) — runnable implementation, unit tests and instructions.
 - [Transformer flow design](labs/transformer-flow.md) — documented decoder-only generation flow.
+- [Tokenization inspection lab](labs/tokenization.md) — inspect token IDs and token bytes using Python.
 
 ## Practical project roadmap
 
@@ -64,7 +65,7 @@ A hands-on solution is considered **artifact-complete** when its necessary solut
 - **Architecture or reasoning lab:** commit a Markdown solution with diagrams (Mermaid where useful), assumptions, trade-offs, safety considerations and acceptance criteria. Code is not required unless implementation is part of the task.
 - **Mixed lab:** commit both the implementation and the explanatory documentation/tests when both are needed for reproducibility and review.
 
-For best practice, changes are submitted through a branch and pull request, reviewed, validated by CI and merged to `main`. A solution on a branch is recorded as committed/in review, not yet merged.
+For best practice, changes are submitted through a branch and pull request, reviewed, validated by CI and merged to \`main\`. A solution on a branch is recorded as committed/in review, not merged.
 
 Artifact completion is not the same as learner mastery. The tracker separately records whether the learner ran, modified and explained the solution. Mastery still requires independent explanation, implementation and practical assessment.
 

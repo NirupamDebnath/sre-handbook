@@ -155,9 +155,11 @@ The transformer is a language-processing component, not a complete incident mana
 4. Why do transformers need positional information?
 5. What does causal masking prevent during next-token prediction?
 
-## Hands-on assignment
+## Hands-on assignment and committed solution
 
-Draw a decoder-only transformer flow from prompt to token generation. Annotate where tokenization, positional information, causal self-attention, next-token scoring and decoding occur. Then explain which parts would need to be connected to telemetry and runbooks to create an AI incident assistant.
+Review the [Transformer Flow Design lab](../labs/transformer-flow.md), which contains a Mermaid reference flow from prompt text through tokenization, decoder blocks, next-token scoring and autoregressive generation. Then explain which separate application components must connect telemetry and approved runbooks to the model.
+
+The [Lesson 3 answer key](../assessments/answer-keys.md#lesson-3--transformers-and-attention) provides the written explanations.
 
 ## Further reading
 

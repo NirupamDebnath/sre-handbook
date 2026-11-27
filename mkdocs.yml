@@ -78,7 +78,13 @@ nav:
           - AI, ML and Deep Learning: ai-for-sre/fundamentals/ai-ml-deep-learning.md
           - Neural Networks: ai-for-sre/fundamentals/neural-networks.md
           - Transformers and Attention: ai-for-sre/fundamentals/transformers-attention.md
-      - Learning Progress: ai-for-sre/assessments/progress.md
+      - Hands-on Labs:
+          - Incident Assistant Design: ai-for-sre/labs/incident-assistant-design.md
+          - Single Neuron Python Lab: ai-for-sre/labs/single-neuron.md
+          - Transformer Flow Design: ai-for-sre/labs/transformer-flow.md
+      - Assessments:
+          - Learning Progress: ai-for-sre/assessments/progress.md
+          - Knowledge Check Answer Keys: ai-for-sre/assessments/answer-keys.md
   - Architecture:
       - System design: system-design/index.md
       - Platform engineering: platform-engineering/index.md

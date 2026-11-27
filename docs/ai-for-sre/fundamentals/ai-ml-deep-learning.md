@@ -101,9 +101,10 @@ Before applying ML or an LLM to operations:
 4. Explain training versus inference.
 5. What information or permissions does an LLM need before it can inspect current Kubernetes state?
 
-## Hands-on exercise
+## Hands-on exercises
 
-Create a small table of 10–20 **synthetic** service observations with fields such as CPU, memory, error rate and incident label. Write one explicit threshold rule and describe where it might fail. Do not claim to have trained a model; this exercise is about problem framing and the difference between rules and learned patterns.
+1. Create a small table of 10–20 **synthetic** service observations with fields such as CPU, memory, error rate and incident label. Write one explicit threshold rule and describe where it might fail. Do not claim to have trained a model; this exercise is about problem framing and the difference between rules and learned patterns.
+2. Work through the [AI incident assistant design lab](../labs/incident-assistant-design.md). It includes a committed reference solution covering evidence inputs, structured outputs, investigation hypotheses, safety boundaries and evaluation.
 
 ## Further reading
 

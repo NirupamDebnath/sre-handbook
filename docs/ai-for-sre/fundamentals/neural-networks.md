@@ -184,9 +184,11 @@ Potential applications include anomaly detection, capacity forecasting and incid
 4. Why does high training accuracy not establish production readiness?
 5. Distinguish data drift from concept drift.
 
-## Hands-on assignment
+## Hands-on assignment and committed solution
 
-Run the Python neuron example, verify the output 0.69, then change the CPU weight to 0.20 and verify 0.405. Explain why manually changing a weight is not training. A further step (not yet completed) is to implement a tiny trainable model with a framework and evaluate it on held-out synthetic data.
+Use the [single-neuron Python lab](../labs/single-neuron.md). It includes a runnable implementation, unit tests and repeatable commands. Verify the outputs 0.690 and 0.405, then change the features or weights and explain the result. The solution demonstrates a forward pass only; it does not train a model.
+
+The [Lesson 2 answer key](../assessments/answer-keys.md#lesson-2--neural-networks-and-model-training) contains the worked calculations and knowledge-check explanations.
 
 ## Further reading
 
@@ -196,4 +198,4 @@ Run the Python neuron example, verify the output 0.69, then change the CPU weigh
 
 ## Progress
 
-**Status: In progress.** Neural networks, weights, forward propagation, loss, backpropagation, gradient descent, overfitting and drift have been discussed. The numeric example was worked through in conversation; the submitted arithmetic was corrected from 0.285 to 0.405. The Python implementation and formal quiz remain pending.
+**Status: In progress.** Neural networks, weights, forward propagation, loss, backpropagation, gradient descent, overfitting and drift have been discussed. The Python lab solution and tests are committed; the local seven-test run passed. Learner execution and the formal quiz remain unverified.

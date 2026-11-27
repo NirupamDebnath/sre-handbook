@@ -24,6 +24,14 @@ The objective is not to replace engineering judgement with an autonomous root-ca
 4. Tokens and tokenization — planned
 5. Embeddings — planned
 
+[Open the Lesson 1–3 knowledge-check answer keys](assessments/answer-keys.md).
+
+## Hands-on solutions
+
+- [AI incident assistant design](labs/incident-assistant-design.md) — reference architecture, evidence inputs, output contract, safety boundaries and acceptance criteria.
+- [Single-neuron Python lab](labs/single-neuron.md) — runnable implementation, unit tests and instructions.
+- [Transformer flow design](labs/transformer-flow.md) — documented decoder-only generation flow.
+
 ## Practical project roadmap
 
 Build progressively with synthetic data and a personal lab:
@@ -46,13 +54,25 @@ Build progressively with synthetic data and a personal lab:
 
 ## Chapter conventions
 
-Each chapter includes learning objectives, prerequisites, first-principles explanations, diagrams, worked examples, SRE applications, limitations, a hands-on assignment, knowledge checks and references.
+Each chapter includes learning objectives, prerequisites, first-principles explanations, diagrams, worked examples, SRE applications, limitations, a hands-on assignment, knowledge checks and references. Answer keys are maintained separately so the lesson pages can still be used for revision.
 
-Progress labels are evidence-based:
+## Hands-on completion and evidence policy
+
+A hands-on solution is considered **artifact-complete** when its necessary solution files are committed to this GitHub repository and the relevant validation passes. Use the format that fits the task:
+
+- **Coding lab:** commit runnable source code, tests and a README with setup/run instructions and expected results. Add design documentation when it materially helps explain the implementation.
+- **Architecture or reasoning lab:** commit a Markdown solution with diagrams (Mermaid where useful), assumptions, trade-offs, safety considerations and acceptance criteria. Code is not required unless implementation is part of the task.
+- **Mixed lab:** commit both the implementation and the explanatory documentation/tests when both are needed for reproducibility and review.
+
+For best practice, changes are submitted through a branch and pull request, reviewed, validated by CI and merged to `main`. A solution on a branch is recorded as committed/in review, not yet merged.
+
+Artifact completion is not the same as learner mastery. The tracker separately records whether the learner ran, modified and explained the solution. Mastery still requires independent explanation, implementation and practical assessment.
+
+## Learning status definitions
 
 - **Not started:** no lesson work recorded.
 - **In progress:** material has been introduced or studied.
-- **Practiced:** the learner completed an exercise and can explain the result.
+- **Practiced:** the learner has completed an exercise and can explain the result.
 - **Mastered:** the learner can independently explain, implement and pass a practical assessment.
 
-A discussion or video alone does not establish mastery.
+A discussion, answer key or mentor-authored reference solution alone does not establish mastery.

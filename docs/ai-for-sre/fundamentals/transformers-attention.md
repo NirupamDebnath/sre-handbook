@@ -69,9 +69,9 @@ An SRE retrieval analogy can help: a search query is matched against document de
 
 Scaled dot-product attention is:
 
-[
-operatorname{Attention}(Q,K,V)=operatorname{softmax}left(\frac{QK^T}{\sqrt{d_k}}\right)V
-]
+$$
+\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
 
 Interpretation:
 

@@ -22,7 +22,8 @@ flowchart TD
     GEN[Generative AI]
     LLM[Large Language Models]
     AI --> ML --> DL
-    DL --> GEN
+    AI --> GEN
+    DL --> LLM
     GEN --> LLM
 ```
 

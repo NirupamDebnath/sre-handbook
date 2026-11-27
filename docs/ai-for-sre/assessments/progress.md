@@ -23,7 +23,7 @@ This tracker records lesson understanding, assessment attempts and GitHub soluti
 | Multi-head attention | In progress | Concept introduced | Explain why independent learned projections can be useful |
 | Positional information | In progress | Concept introduced | Compare learned positional embeddings and RoPE at a high level |
 | Causal masking and generation | In progress | Autoregressive generation introduced; reference flow documented | Explain causal masking without the answer key |
-| Tokens and tokenization | In progress | Lesson 4 introduced; reference explanation and Python inspection lab committed on feature branch | Run the lab on English, Kubernetes identifier, JSON and Bengali synthetic text; answer the knowledge check |
+| Tokens and tokenization | In progress | Lesson 4 introduced; reference explanation and Python inspection lab merged to main | Run the lab on English, Kubernetes identifier, JSON and Bengali synthetic text; answer the knowledge check |
 | Embeddings | Not started | — | Next lesson after tokenization practice and assessment |
 
 ## Assessment record
@@ -41,12 +41,12 @@ This tracker records lesson understanding, assessment attempts and GitHub soluti
 
 | Exercise | Artifact status | Evidence | Learner evidence / mastery |
 | --- | --- | --- | --- |
-| AI incident assistant design | Artifact complete — merged to \`main\` | \`docs/ai-for-sre/labs/incident-assistant-design.md\` includes architecture, inputs, output contract, investigation flow, safety and acceptance criteria | Reference solution is available; no independent learner submission recorded |
-| Single-neuron Python implementation | Artifact complete — merged to \`main\`; 7 tests pass locally and in CI | \`labs/ai-for-sre/single-neuron/neuron.py\`, \`test_neuron.py\`, and README include implementation, tests and run instructions | Arithmetic discussed; learner execution/independent modification not yet reported |
-| Transformer architecture flow | Artifact complete — merged to \`main\` | \`docs/ai-for-sre/labs/transformer-flow.md\` includes Mermaid flow and explanation | Reference solution is available; independent learner explanation not assessed |
-| Tokenization inspection | Committed on feature branch; PR validation pending | Lesson page, lab guide, Python source, five unit tests, requirements and README added on \`lesson-4-tokenization-20261127\` | Learner has not yet run or modified the lab; artifact completion awaits merge and passing CI |
+| AI incident assistant design | Artifact complete — merged to main | docs/ai-for-sre/labs/incident-assistant-design.md includes architecture, inputs, output contract, investigation flow, safety and acceptance criteria | Reference solution is available; no independent learner submission recorded |
+| Single-neuron Python implementation | Artifact complete — merged to main; 7 tests pass locally and in CI | labs/ai-for-sre/single-neuron/neuron.py, test_neuron.py, and README include implementation, tests and run instructions | Arithmetic discussed; learner execution/independent modification not yet reported |
+| Transformer architecture flow | Artifact complete — merged to main | docs/ai-for-sre/labs/transformer-flow.md includes Mermaid flow and explanation | Reference solution is available; independent learner explanation not assessed |
+| Tokenization inspection | Artifact complete — merged to main via PR #4 | Lesson page, lab guide, Python source, five unit tests, requirements and README merged in commit 8d71a5efabded644b3f9bce584877d07b6278323 | Reference artifact complete; learner has not yet run or modified the lab |
 
-The single-neuron tests were run locally using Python's standard-library \`unittest\` and all seven passed. GitHub Actions validation on the merged \`main\` commit also passed \`mkdocs build --strict\` and all seven unit tests. The GitHub Pages deployment workflow for the merged commit completed successfully.
+GitHub Actions for PR #4 passed: MkDocs strict build, all seven single-neuron tests and all five tokenization tests. A local clone/test run was not available in this session because the environment could not resolve github.com.
 
 ## Hands-on artifact completion policy
 
@@ -55,7 +55,7 @@ A hands-on artifact is complete when the required implementation and/or document
 - Coding tasks normally require runnable source, tests, and a README with commands and expected output.
 - Design/reasoning tasks normally require a Markdown solution with diagrams, assumptions, trade-offs, safety and acceptance criteria.
 - Mixed tasks require both code and documentation when both are necessary for reproducibility and review.
-- Prefer a branch and pull request, then merge to \`main\` after review and CI. A branch-only solution is committed/in review, not merged.
+- Prefer a branch and pull request, then merge to main after review and CI. A branch-only solution is committed/in review, not merged.
 - Artifact completion is tracked separately from learner mastery. A committed reference solution does not prove the learner can independently explain or implement it.
 
 ## Learning status definitions

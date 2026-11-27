@@ -8,6 +8,13 @@ This section builds the foundations needed to understand modern language models 
 2. [Neural networks and model training](neural-networks.md)
 3. [Transformers and attention](transformers-attention.md)
 
+## Answer keys and labs
+
+- [Knowledge-check answer keys for Lessons 1–3](../assessments/answer-keys.md)
+- [Single-neuron Python lab](../labs/single-neuron.md)
+- [Transformer flow design lab](../labs/transformer-flow.md)
+- [AI incident assistant design lab](../labs/incident-assistant-design.md)
+
 ## Coming next
 
 - Tokens and tokenization

@@ -78,10 +78,12 @@ nav:
           - AI, ML and Deep Learning: ai-for-sre/fundamentals/ai-ml-deep-learning.md
           - Neural Networks: ai-for-sre/fundamentals/neural-networks.md
           - Transformers and Attention: ai-for-sre/fundamentals/transformers-attention.md
+          - Tokens and Tokenization: ai-for-sre/fundamentals/tokens-and-tokenization.md
       - Hands-on Labs:
           - Incident Assistant Design: ai-for-sre/labs/incident-assistant-design.md
           - Single Neuron Python Lab: ai-for-sre/labs/single-neuron.md
           - Transformer Flow Design: ai-for-sre/labs/transformer-flow.md
+          - Tokenization Inspection Lab: ai-for-sre/labs/tokenization.md
       - Assessments:
           - Learning Progress: ai-for-sre/assessments/progress.md
           - Knowledge Check Answer Keys: ai-for-sre/assessments/answer-keys.md

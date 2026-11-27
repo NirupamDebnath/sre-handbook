@@ -85,9 +85,11 @@ def main() -> None:
     print(f"Tokens: {report.token_count}")
     print("Token breakdown (byte representation is intentional):")
 
-    for index, (token_id, token_bytes) in enumerate(
-        zip(report.token_ids, report.token_bytes, strict=True)
-    ):
+    if len(report.token_ids) != len(report.token_bytes):
+        raise RuntimeError("Token IDs and token byte pieces have different lengths")
+
+    for index, token_id in enumerate(report.token_ids):
+        token_bytes = report.token_bytes[index]
         print(f"  {index:>3}: id={token_id:<8} bytes={token_bytes!r}")
 
     reconstructed = b"".join(report.token_bytes).decode("utf-8")

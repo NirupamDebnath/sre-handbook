@@ -23,3 +23,5 @@ jobs:
         run: mkdocs build --strict
       - name: Run AI-SRE single-neuron unit tests
         run: python -m unittest discover -s labs/ai-for-sre/single-neuron -p 'test_*.py' -v
+      - name: Run AI-SRE tokenization unit tests
+        run: python -m unittest discover -s labs/ai-for-sre/tokenization -p 'test_*.py' -v

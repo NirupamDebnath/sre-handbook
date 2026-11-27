@@ -75,8 +75,8 @@ operatorname{Attention}(Q,K,V)=operatorname{softmax}left(\frac{QK^T}{\sqrt{d_k}}
 
 Interpretation:
 
-1. (QK^T) calculates compatibility scores between queries and keys.
-2. Dividing by (sqrt{d_k}) scales scores by the key dimension.
+1. $QK^T$ calculates compatibility scores between queries and keys.
+2. Dividing by $\sqrt{d_k}$ scales scores by the key dimension.
 3. Softmax turns scores into normalized weights.
 4. The weights are used to form a weighted combination of value vectors.
 
